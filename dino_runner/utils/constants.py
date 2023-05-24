@@ -8,6 +8,9 @@ SCREEN_WIDTH = 1100
 FPS = 30
 IMG_DIR = os.path.join(os.path.dirname(__file__), "..", "assets")
 
+FONT_STYLE = "./font/8-BIT WONDER.TTF"
+
+
 # Assets Constants
 ICON = pygame.image.load(os.path.join(IMG_DIR, "Dino/duck2.png"))
 
@@ -75,17 +78,24 @@ BIRD = [
     pygame.image.load(os.path.join(IMG_DIR, "Bird/Bird2.png")),
 ]
 
+
+
 CLOUD = pygame.image.load(os.path.join(IMG_DIR, 'Other/Cloud.png'))
 SHIELD = pygame.image.load(os.path.join(IMG_DIR, 'Other/shield.png'))
 HAMMER = pygame.image.load(os.path.join(IMG_DIR, 'Other/hammer.png'))
 
-BG = pygame.image.load(os.path.join(IMG_DIR, 'Other/Track.png'))
+BG = pygame.image.load(os.path.join(IMG_DIR, 'Other/menu.png'))
 FUNDO = pygame.image.load(os.path.join(IMG_DIR, 'Other/teste.png'))
 FUNDO = pygame.transform.scale(FUNDO,(SCREEN_WIDTH, SCREEN_HEIGHT ))
-FUNDO_INIT =  pygame.image.load(os.path.join(IMG_DIR, 'Other/teste.png'))
+FUNDO_INIT =  pygame.image.load(os.path.join(IMG_DIR, 'Other/menu.png'))
 FUNDO_INIT = pygame.transform.scale(FUNDO,(SCREEN_WIDTH, SCREEN_HEIGHT ))
+GAME_OVER = pygame.image.load(os.path.join(IMG_DIR, 'Other/GameOver.png'))
 
 HEART = pygame.image.load(os.path.join(IMG_DIR, 'Other/SmallHeart.png'))
 
+MAIN_STATE = 'main'
+OPT_STATE = 'options'
+
 DEFAULT_TYPE = "default"
 SHIELD_TYPE = "shield"
+
